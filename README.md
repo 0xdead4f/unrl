@@ -1,5 +1,5 @@
 # UNRL
-Eliminating duplicates of url with same parameter from stdin.
+Unrl or Unique (instead of Uniform because i have no idea what what to name it and it's 1:00 AM and im very sleepy) Resource Locator Eliminating duplicates of url with same parameter from stdin.
 
 ## Usage
 ```
