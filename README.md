@@ -17,3 +17,10 @@ Use ```unrl``` from stdin :
 https://example.com/diff?a=&b=
 https://example.com/test?a=&b=
 ```
+## Next Objective
+The next objective of this project is eliminating similiar url with different id identifier in the path. For example :
+```
+https://example.com/blog/123123/?s=query
+https://example.com/blog/321312/?s=query
+```
+The url should be marked same because it's basically same url and have same functionality. If you guys know how to effectively do such an method, please do a pull request !
