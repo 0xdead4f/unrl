@@ -27,6 +27,12 @@ Use ```unrl``` from stdin :
 https://example.com/diff?a=&b=&c=
 https://example.com/test?a=&b=
 ```
+
+## Personal Use
+Chaining with other tools to find reflected element in websites :
+```
+subfinder -d example.com | gau | unrl | kxss | grep -v "\[\]" | tee result.txt
+```
 ## Next Objective
 The next objective of this project is eliminating similiar url with different id identifier in the path. For example :
 ```
