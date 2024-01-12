@@ -20,9 +20,18 @@ func unique(s []string) []string {
     return result
 }
 
+func isin(s []string,c string) bool {
+    for _,i := range(s){
+        if c == i{
+            return true
+        }
+    }
+    return false
+}
+
 func main() {
     var lines []string
-
+    var fewer []string
     scanner := bufio.NewScanner(os.Stdin)
 
     for scanner.Scan() {
@@ -39,9 +48,17 @@ func main() {
 	for i, j := range(lines){
 		lines[i] = regex.ReplaceAllString(j,"=")
 	}
+    var temp string
 	sort.Strings(lines)
 	lines = unique(lines)
 	for _,i := range(lines){
-		fmt.Println(i)
+        for _,j := range(lines){
+            if strings.Contains(j,i){
+                fewer = append(fewer,i)
+            }
+        }
+        if !isin(fewer,i){
+            fmt.Println(i)
+        }
 	}
 }
