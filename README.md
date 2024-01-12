@@ -3,7 +3,7 @@ Unrl or Unique (instead of Uniform because i have no idea what what to name it a
 
 ## Installation
 ```
-go install https://github.com/0xdead4f/Unrl
+go install github.com/0xdead4f/Unrl@latest
 ```
 
 ## Usage

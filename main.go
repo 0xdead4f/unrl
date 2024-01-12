@@ -48,7 +48,7 @@ func main() {
 	for i, j := range(lines){
 		lines[i] = regex.ReplaceAllString(j,"=")
 	}
-    var temp string
+    
 	sort.Strings(lines)
 	lines = unique(lines)
 	for _,i := range(lines){
