@@ -14,12 +14,13 @@ https://example.com/test?a=cccc&b=ddddd
 https://example.com/test?a=zzzz&b=xxxxx
 https://example.com/diff?a=aaaa&b=bbbbb
 https://example.com/diff?a=aaaa&b=ddddd
+https://example.com/diff?a=aaaa&b=ddddd&c=zzzz
 ```
 Use ```unrl``` from stdin :
 ```
 > cat url.txt | unrl
 
-https://example.com/diff?a=&b=
+https://example.com/diff?a=&b=&c=
 https://example.com/test?a=&b=
 ```
 ## Next Objective
